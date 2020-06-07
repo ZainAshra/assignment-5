@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- part1 -->
+    <script>
+        var city = prompt("Enter Your City:::")
+        if (city == "karachi") {
+            alert("Welcome to city of lights")
+        }
+        else {
+            alert("Welcome to city of Dark lights")
+        }
+    </script>
+    <!-- part2 -->
+    <script>
+        var gender = prompt("Your Gender is:::")
+        if (gender == "male") {
+            alert("Good Morning Sir")
+        }
+        else if (gender == "female") {
+            alert(" Good Morning Ma’am")
+        }
+        else {
+            alert("")
+        }
+    </script>
+    <!-- part3 -->
+    <script>
+        var color = prompt("color of road traffic signal:::")
+        if (color == "red") {
+            alert("Must Stop")
+        }
+        else if (color == "yellow") {
+            alert("Ready to move")
+        }
+        else if (color == "green") {
+            alert("Move now")
+        }
+        else {
+            alert("")
+        }
+
+    </script>
+
+    <!-- part4 -->
+    <script>
+        var fuel = +prompt(" remaining fuel in car (in litres):::")
+        if (fuel < 0.25) {
+            alert("Please refill the fuel in your car")
+        }
+        else {
+            alert("the fuel in your car is full")
+        }
+    </script>
+    <!-- part5 -->
+
+    <script>
+        //alert message would be displayed
+        // var a = 4;
+        // if (++a === 5){
+        // alert("given condition for variable a is true");
+        // }
+
+        //alert message would not be displayed
+        // var b = 82;
+        // if (b++ === 83){
+        // alert("given condition for variable b is true");
+        // }
+
+        //alert message would not be displayed
+        // var c = 12;
+        // if (c++ === 13){
+        // alert("condition 1 is true");
+        // }
+        // //alert message would be displayed
+        // if (c === 13){
+        // alert("condition 2 is true");
+        // }
+        // //alert message would not be displayed
+        // if (++c < 14){
+        // alert("condition 3 is true");
+        // }
+        // //alert message would be displayed
+        // if(c === 14){
+        // alert("condition 4 is true");
+        // }
+
+        //alert message would be displayed
+        // var materialCost = 20000;
+        // var laborCost = 2000;
+        // var totalCost = materialCost + laborCost;
+        // if (totalCost === laborCost + materialCost){
+        // alert("The cost equals");
+        // }
+
+        // //alert message would be displayed
+        //     if (true){
+        // alert("True");
+        // }
+        // //alert message would not be displayed
+        // if (false){
+        // alert("False");
+        // }
+
+        //alert message would be displayed
+        if ("car" < "cat") {
+            alert("car is smaller than cat");
+        }
+
+
+    </script>
+    <!-- part6 -->
+
+    <h1>Marks Sheet</h1>
+    <script>
+        var marks = +prompt("marks obtained in three subjects:::")
+        var total = 300;
+
+        var per = (marks / total) * 100 + "%";
+        if (per >= 80 + "%") {
+            grade = "A-One"
+            remarks = "Excellent"
+        }
+        else if (per >= 70 + "%") {
+            grade = "A"
+            remarks = "Good"
+        }
+        else if (per >= 60 + "%") {
+            grade = "B"
+            remarks = "You need to improve"
+        }
+        else if (per < 60 + "%") {
+            grade = "Fail"
+            remarks = "Sorry"
+        }
+
+
+
+
+
+
+        document.write("Total Marks:::" + total + "<br>")
+        document.write("Marks Obtained:::" + marks + "<br>")
+        document.write("Percentage:::" + per + "<br>")
+        document.write("Grade :::" + grade + "<br>")
+        document.write("Grade :::" + remarks)
+    </script>
+
+    <!-- part7 -->
+    <script>
+        var user =+prompt("guess the secret number between 1 to 10")
+        var a =(Math.floor(Math.random() * 10) + 1);
+       
+        alert("My Guess is :::"+a)
+        if(user ==a ){
+            
+            alert("Bingo! Correct answer")
+        }
+        else{
+            a++;
+           alert("Close enough to the correct answer")
+        }
+       
+       </script> 
+<!-- part8        -->
+
+<script>
+    var num =+prompt("Enter Given Number:::")
+    
+    if(num%3==0){
+        alert("the number is divisible by 3")
+    }
+    else{
+        alert("the number is not divisible by 3")
+    }
+    </script>
+
+    <!-- part9 -->
+    <script>
+        var input=+prompt("checks whether the given input is an even number or an odd number.")
+        if(input%2==0){
+            alert("Your Number is Even")
+        }
+        else{
+            alert("Your Number is Odd")
+        }
+        </script>
+        <!-- part10 -->
+
+        <script>
+            var temp=prompt("Enter Temperature of your city")
+            if(temp>=40){
+                alert("It is too hot outside")
+            }
+            else if(temp>=30){
+                alert("The Weather today is Normal")
+            }
+            else if(temp>=20){
+                alert("Today’s Weather is cool")
+            }
+            else if(temp>=10){
+                alert("OMG! Today’s weather is so Cool")
+            }
+            </script>
+
+            <!-- part11 -->
+            <script>
+                var num1=+prompt("Enter first number")
+                var num2=+prompt("Enter second number")
+                var op = prompt("enter operator")
+                if(op=="+"){
+                    a = num1 + num2
+                    alert(a)
+                }
+                else if(op=="-"){
+                    a = num1 - num2
+                    alert(a)
+                }
+                else if(op=="*"){
+                    a = num1 * num2
+                    alert(a)
+                }
+                else if(op=="/"){
+                    a = num1 / num2
+                    alert(a)
+                }
+                else if(op=="%"){
+                    a = num1 % num2
+                    alert(a)
+                }
+                </script>
+
+</body>
+
+</html>

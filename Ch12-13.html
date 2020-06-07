@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- part1 -->
+    <script>
+        var ch = prompt("enter character (number or string) ")
+        if ((ch >= 65 && ch <= 90) || (ch >= 'A' && ch <= 'Z')) {
+            alert("Character is a capital letter");
+        }
+        else if ((ch >= 97 && ch <= 122) || (ch >= 'A' && ch <= 'Z')) {
+            alert("Character is a small letter");
+        }
+        else if ((ch >= 48 && ch <= 57) || (ch >= '0' && ch <= '9')) {
+            alert("Character is a digit");
+        }
+        else if ((ch > 0 && ch <= 47) || (ch >= 58 && ch <= 64) ||
+            (ch >= 91 && ch <= 96) || (ch >= 123 && ch <= 127)) {
+            alert("Character is a special symbol");
+        }
+    </script>
+    <!-- part2     -->
+    <script>
+        var num1 = +prompt("Enter First Integer")
+        var num2 = +prompt("Enter Second Integer")
+        if (num1 > num2) {
+            alert("First Integer is greater than Second Ineger")
+        }
+        else if (num2 > num1) {
+            alert("Second Integer is greater than First Ineger")
+        }
+        else if (num1 == num2) {
+            alert("First Integer is equal to First Ineger")
+        }
+        else {
+            alert("")
+        }
+    </script>
+
+    <!-- part3 -->
+    <script>
+        var num = +prompt("whether the number is positive, negative or zero.")
+        if (num > 0) {
+            alert("Positive Number")
+        }
+        else if (num < 0) {
+            alert("Negative Number")
+        }
+        else if (num == 0) {
+            alert("Zero Number")
+        }
+        else {
+            alert("")
+        }
+    </script>
+
+    <!-- part4 -->
+
+    <script>
+        var ch = prompt("Enter A Character")
+        if (ch == "v" || ch == "o" || ch == "w" || ch == "e" || ch == "l") {
+            alert("Vowel")
+        }
+        else {
+            alert("Not A Vowel")
+        }
+    </script>
+
+    <!-- part5 -->
+    <script>
+        var pass = "welcome123"
+        var user = prompt("Enter Password")
+        if (user == pass) {
+            alert("Correct! The password you entered matches the original password")
+        }
+        else if (user == "") {
+            alert("Please enter your password")
+        }
+        else {
+            alert("Incorrect password")
+        }
+    </script>
+
+    <!-- part6 -->
+    <script>
+
+        var greeting;
+        var hour = 13;
+        if (hour < 18) {
+            greeting = "Good day";
+            alert(greeting)
+        }
+        else {
+            greeting = "Good evening";
+            alert(greeting)
+        }
+
+    </script>
+
+    <!-- part7 -->
+    <script>
+        var time = +prompt("Enter Time in 24 hours")
+        if(time>=0000 && time<1200){
+            alert("Good Morning!")
+        }
+        else if(time>=1200 && time<1700){
+            alert("Good Afternoon!")
+        }
+        else if(time>=1700 && time<2100){
+            alert("Good Evening!")
+        }
+        else if(time>=2100 && time<2359){
+            alert("Good night!")
+        }
+        else{
+            alert("")
+        }
+        
+    </script>
+
+
+
+</body>
+
+</html>

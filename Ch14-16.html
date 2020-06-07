@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- part1-2 -->
+    //Declare an empty array using JS literal notation to store student names in future.
+    // var arrayA = []
+    // var arrayB = new Array()
+
+    //Declare an empty array using JS object notation to store student names in future.
+    // var objectA = {}
+    // var objectB = new Object()
+    </script>
+
+    <!-- part3 -->
+
+    <script>
+        var days_of_week = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        alert(days_of_week)
+    </script>
+    <!-- part4 -->
+
+    script>
+    var num = new Array(1000,1100,1200,1300,1400,1500,1600);
+    alert(num)
+    </script>
+
+    <!-- part5 -->
+
+    <script>
+        var bol = new Array(true, false, true, false, true, false, true);
+        alert(bol)
+    </script>
+    <!-- part6 -->
+    <script>
+        var mix = new Array("Sunday", 1223, "Tuesday", true, "Thursday", false, "Saturday");
+        alert(mix)
+    </script>
+
+    <!-- part7 -->
+
+    <h1>Qualifications</h1>
+    <script>
+        var a = [[], ["SSC"], ["HSC"], ["BCS"], ["BS"], ["BCOM"], ["MS"], ["M.Phil"], ["PhD"]];
+
+        for (var i in a) {
+
+            for (var j in a[i]) {
+                document.write(i++ + ")" + a[i][j] + "<br>");
+            }
+        }
+    </script>
+
+    <!-- part8 -->
+
+    <script>
+        var aa = ["Michael", "John", "Tony"]
+        var sco = [320, 230, 480]
+        var total = 500;
+        document.write("Score of Michael is " + sco[0] + ". Percentage : " + ((sco[0] / total) * 100) + "%" + "<br>")
+        document.write("Score of John is " + sco[1] + ". Percentage : " + ((sco[1] / total) * 100) + "%" + "<br>")
+        document.write("Score of Tony is " + sco[2] + ". Percentage : " + ((sco[2] / total) * 100) + "%" + "<br>")
+    </script>
+
+    <!-- part9i -->
+
+    <script>
+
+
+
+        var user = prompt("what color he/she wants to add to the beginning")
+        var color = ["red", "blue", "green", "yellow", "grey"]
+        document.write("Colors :" + "<br>" + color + "<br>" + "<br>")
+
+        if (user == 'yes') {
+            color.unshift(prompt(""))
+
+        }
+
+        document.write("Colors are added to beginner :" + "<br>" + color + "<br>")
+    </script>
+
+    <!-- part9ii -->
+
+
+    <script>
+        var user = prompt("what color he/she wants to add to the last")
+        var color = ["red", "blue", "green", "yellow", "grey"]
+        document.write("Colors :" + "<br>" + color + "<br>" + "<br>")
+
+        if (user == 'yes') {
+            color.push(prompt(""))
+
+        }
+
+        document.write("Colors are added to End :" + "<br>" + color + "<br>")
+    </script>
+    <!-- part9iii -->
+
+    <script>
+
+
+
+        var user = prompt("what color he/she wants to add more to the beginning")
+        var color = ["red", "blue", "green", "yellow", "grey"]
+        document.write("Colors :" + "<br>" + color + "<br>" + "<br>")
+
+        if (user == 'yes') {
+            color.unshift(prompt(""))
+            color.unshift(prompt(""))
+            color.unshift(prompt(""))
+
+        }
+
+        document.write("Two More Colors are added to beginner :" + "<br>" + color + "<br>")
+    </script>
+
+    <!-- part9iv -->
+
+    <script>
+
+        var color = ["red", "blue", "green", "yellow", "grey"]
+        document.write("Colors :" + "<br>" + color + "<br>" + "<br>")
+
+
+        color.shift()
+        document.write("First Colors are deleted :" + "<br>" + color + "<br>")
+    </script>
+
+    <!-- part9v -->
+
+    <script>
+
+
+        var color = ["red", "blue", "green", "yellow", "grey"]
+        document.write("Colors :" + "<br>" + color + "<br>" + "<br>")
+
+
+        color.pop()
+
+
+
+        document.write("last Colors are deleted :" + "<br>" + color + "<br>")
+    </script>
+
+    <!-- part9vi -->
+
+    <script>
+        var user = prompt("Which Color::")
+        var user1 = +prompt("Enter position/index")
+        var color = ["red", "blue", "green", "yellow", "grey"]
+        document.write("Colors :" + "<br>" + color + "<br>" + "<br>")
+
+
+        color[user1] = user
+        document.write("color to desired position/index :" + "<br>" + color + "<br>")
+    </script>
+    <!-- part9vii -->
+
+    <script>
+
+        var color = ["red", "blue", "green", "yellow", "grey"]
+        document.write("Colors :" + "<br>" + color + "<br>" + "<br>")
+
+
+        color.pop()
+
+        document.write("last Colors are deleted :" + "<br>" + color + "<br>")
+    </script>
+
+    <!-- part10 -->
+
+    <script>
+        var std = [320, 230, 480, 120]
+        document.write("Scores of Students : " + std + "<br>")
+        document.write("Ordered Scores of Students : " + std.sort())
+    </script>
+
+    <!-- part11 -->
+
+    <script>
+        var city = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"]
+        document.write("Cities Lists::" + "<br>")
+        document.write(city)
+        document.write("<br>" + "<br>")
+        document.write("Selected Cities List::" + "<br>")
+        document.write(city.splice(2, 2))
+
+    </script>
+
+    <!-- part12 -->
+
+    <script>
+        var arr = ["This ", "is ", "my ", "cat"]
+        document.write("Array:" + "<br>")
+        document.write(arr)
+        document.write("<br>" + "<br>")
+        document.write("String:" + "<br>")
+        document.write(arr.join(''))
+
+    </script>
+
+    <!-- part13 -->
+
+    <script>
+        var stack = new Array();
+
+        stack.unshift("keyword");
+        stack.unshift("mouse");
+        stack.unshift("printer");
+        stack.unshift("monitor");
+        document.write("Devices:" + "<br>" + ["keyword", ",mouse", "printer", "monitor"] + "<br>" + "<br>")
+
+        document.write("Out:" + "<br>" + stack.pop() + "<br>");
+        document.write("Out:" + "<br>" + stack.pop() + "<br>");
+        document.write("Out:" + "<br>" + stack.pop() + "<br>");
+        document.write("Out:" + "<br>" + stack.pop() + "<br>");
+    </script>
+
+    <!-- part14 -->
+
+    <script>
+        var stack = new Array();
+        stack.push("keyword");
+        stack.push("mouse");
+        stack.push("printer");
+        stack.push("monitor");
+        document.write("Devices:" + "<br>" + ["keyword", ",mouse", "printer", "monitor"] + "<br>" + "<br>")
+
+
+        document.write("Out:" + "<br>" + stack.pop() + "<br>");
+        document.write("Out:" + "<br>" + stack.pop() + "<br>");
+        document.write("Out:" + "<br>" + stack.pop() + "<br>");
+        document.write("Out:" + "<br>" + stack.pop() + "<br>");
+
+
+    </script>
+
+    <!-- part15 -->
+
+    <select id="selectNumber">
+        <option>Choose a Phone Manufacturing</option>
+    </select>
+    <script>
+        var select = document.getElementById("selectNumber");
+        var options = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+        for (var i = 0; i < options.length; i++) {
+            var opt = options[i];
+            var el = document.createElement("option");
+            el.textContent = opt;
+            el.value = opt;
+            select.appendChild(el);
+        }
+    </script>
+
+</body>
+
+</html>
